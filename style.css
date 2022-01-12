@@ -1,0 +1,72 @@
+*{
+	margin: 0;
+	padding: 0;	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#cabecera{
+	background: #0096c7;
+}
+#cabecera h2{
+	color: #fff;
+}
+#cabecera h3{
+	color: #fff;
+}
+#cabecera h4{
+	color: #fff;
+}
+#cabecera h5{
+	color: #fff;
+}
+
+body{
+	background: url(Imagenes/fondo.jpg);
+	background-size: 100%;
+}
+.navegacion{
+	width: 630px;
+	margin: 30px auto;
+	background: #fff;
+}
+.navegacion ul{
+	list-style: none;
+}
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: #353535;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	color: #ce7d35;
+	transition: all 0.5s;
+}
+/*Sub-menu*/
+.submenu{
+	position: absolute;
+	background: #fff;
+	width: 100%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 2.5s;
+}
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color: #353535;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
